@@ -1,0 +1,7 @@
+# Local source materials and export bundles are intentionally not published.
+/*
+!/.gitignore
+!/index.html
+!/assets/
+!/assets/**
+
