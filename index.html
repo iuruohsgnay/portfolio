@@ -459,6 +459,59 @@ body::after {
 }
 
 /* ========================================
+   Vibecoding 个人项目
+   ======================================== */
+.vibe-project {
+  padding: 96px 0 104px;
+  background: var(--pop-cream);
+}
+.vibe-project-intro { text-align: center; margin-bottom: 44px; }
+.vibe-project-intro h2 {
+  font-family: var(--font-serif); font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3.4rem); color: var(--pop-black);
+}
+.vibe-project-card {
+  max-width: 1040px; margin: 0 auto; overflow: hidden;
+  border: 1px solid rgba(43, 38, 32, 0.1); border-radius: 6px;
+  background: var(--pop-cream-warm);
+  box-shadow: 0 20px 56px rgba(43, 38, 32, 0.08);
+}
+.vibe-project-image {
+  display: block; overflow: hidden; border-bottom: 1px solid rgba(43, 38, 32, 0.08);
+}
+.vibe-project-image img {
+  display: block; width: 100%; height: auto;
+  transition: transform 0.8s var(--ease);
+}
+.vibe-project-image:hover img { transform: scale(1.015); }
+.vibe-project-body {
+  display: grid; grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  gap: 48px; padding: 34px 38px 38px;
+}
+.vibe-project-tag {
+  font-family: var(--font-sans); font-size: 0.66rem; font-weight: 600;
+  letter-spacing: 0.18em; color: var(--pop-orange); text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.vibe-project-title {
+  font-family: var(--font-serif); font-weight: 400;
+  font-size: 1.55rem; line-height: 1.35; color: var(--pop-black);
+}
+.vibe-project-meta {
+  margin-top: 16px; font-family: var(--font-sans); font-size: 0.68rem;
+  letter-spacing: 0.08em; line-height: 1.7; color: var(--pop-gray);
+}
+.vibe-project-desc {
+  font-family: var(--font-sans); font-weight: 300;
+  font-size: 0.9rem; line-height: 2; color: var(--pop-gray);
+}
+.vibe-project-link-note {
+  display: inline-block; margin-top: 18px;
+  font-family: var(--font-sans); font-size: 0.68rem;
+  letter-spacing: 0.12em; color: var(--pop-orange);
+}
+
+/* ========================================
    作品集跳转卡片
    ======================================== */
 .portfolio-cards {
@@ -1011,6 +1064,8 @@ body::after {
   .footer-links a { padding: 6px 14px; font-size: 0.62rem; }
   .cando-grid { grid-template-columns: 1fr; gap: 48px; }
   .word-cloud, .cando-want { min-height: 320px; }
+  .vibe-project { padding: 72px 0 80px; }
+  .vibe-project-body { grid-template-columns: 1fr; gap: 22px; padding: 26px 24px 30px; }
   .music-video-wrapper { width: 260px; }
   .music-toggle { width: 44px; height: 44px; }
 }
@@ -1360,6 +1415,32 @@ body::after {
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Vibecoding 个人项目 -->
+<section class="vibe-project" id="vibe-project">
+  <div class="container">
+    <div class="vibe-project-intro reveal visible">
+      <p class="label">Vibecoding Project</p>
+      <h2>城市散步学。</h2>
+    </div>
+    <article class="vibe-project-card reveal visible">
+      <a class="vibe-project-image" href="https://city-walkology.divine-panda-7823.chatgpt.site/" target="_blank" rel="noopener" aria-label="打开城市散步学网站">
+        <img src="assets/embedded/embedded-45.png" alt="城市散步学网站界面" loading="lazy">
+      </a>
+      <div class="vibe-project-body">
+        <div>
+          <p class="vibe-project-tag">个人 Vibecoding 项目</p>
+          <h3 class="vibe-project-title">城市散步学｜City Walkology</h3>
+          <p class="vibe-project-meta">CODEX · HTML · 高德地图 API · 路线分享</p>
+        </div>
+        <div>
+          <p class="vibe-project-desc">以“城市散步与轻旅游”为主题，借助 Codex 将创意开发为可持续查看、编辑与分享的 HTML 网站。项目基于高德地图 API 构建交互式路线体验，让用户既能探索私藏散步路线，也能规划并分享属于自己的城市漫游。通过地图、轨迹、地点与视觉叙事的结合，让日常旅行规划变得直观、精美，也让地图能出片、轨迹有表达。</p>
+          <span class="vibe-project-link-note">点击图片进入项目 ↗</span>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
